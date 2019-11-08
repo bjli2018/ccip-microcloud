@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microcloud-consumer" />
-        <module name="ccip-security" />
         <module name="ccip-api" />
+        <module name="microcloud-consumer" />
+        <module name="ccip-eureka" />
+        <module name="ccip-security" />
         <module name="microcloud-provider-product" />
         <module name="ccipapi" />
       </profile>

@@ -1,0 +1,9 @@
+server:
+  port: 8761
+eureka:
+  #解决Eureka Server将自己注册到服务注册中心
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance: # eureak实例定义
+    hostname: localhost # 定义 Eureka 实例所在的主机名称
