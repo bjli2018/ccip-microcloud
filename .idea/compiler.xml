@@ -6,17 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ccip-api" />
-        <module name="ccipapi" />
         <module name="microcloud-consumer" />
+        <module name="ccip-security" />
+        <module name="ccip-api" />
         <module name="microcloud-provider-product" />
+        <module name="ccipapi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ccip-api" target="1.8" />
-      <module name="ccip-microcloud" target="1.8" />
-      <module name="microcloud-consumer" target="1.8" />
-      <module name="microcloud-provider-product" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
