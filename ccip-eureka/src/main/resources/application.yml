@@ -8,8 +8,10 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka,http://admin:admin@localhost:8762/eureka,http://admin:admin@localhost:8763/eureka
   instance: # eureak实例定义
-    hostname: localhost # 定义 Eureka 实例所在的主机名称
+    hostname: eureka1 # 定义 Eureka 实例所在的主机名称
 spring:
   security:
     user:
