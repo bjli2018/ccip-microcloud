@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ccip-api/ccip-api.iml" filepath="$PROJECT_DIR$/ccip-api/ccip-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ccip-eureka/ccip-eureka.iml" filepath="$PROJECT_DIR$/ccip-eureka/ccip-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ccip-eureka2/ccip-eureka (1).iml" filepath="$PROJECT_DIR$/ccip-eureka2/ccip-eureka (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/ccip-eureka3/ccip-eureka (2).iml" filepath="$PROJECT_DIR$/ccip-eureka3/ccip-eureka (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/ccip-microcloud.iml" filepath="$PROJECT_DIR$/.idea/ccip-microcloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ccip-security/ccip-security.iml" filepath="$PROJECT_DIR$/ccip-security/ccip-security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microcloud-consumer/microcloud-consumer.iml" filepath="$PROJECT_DIR$/microcloud-consumer/microcloud-consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microcloud-provider-product/microcloud-provider-product.iml" filepath="$PROJECT_DIR$/microcloud-provider-product/microcloud-provider-product.iml" />
     </modules>
   </component>
 </project>
