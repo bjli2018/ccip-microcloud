@@ -14,8 +14,6 @@
         <module>microcloud-consumer</module>
         <module>ccip-security</module>
         <module>ccip-eureka</module>
-        <module>ccip-eureka2</module>
-        <module>ccip-eureka3</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
