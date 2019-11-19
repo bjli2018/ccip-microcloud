@@ -30,4 +30,24 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>ccip-consumer</finalName>
+        <plugins>
+            <plugin> <!-- 该插件的主要功能是进行项目的打包发布处理 -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.2.RELEASE</version>
+                <configuration> <!-- 设置程序执行的主类 -->
+                    <mainClass>com.varian.ccip.ConsumerApp</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

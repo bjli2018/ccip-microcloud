@@ -5,7 +5,7 @@ mybatis:
     - classpath:mapping/*.xml
 spring:
   application:
-    name: microcloud-provider-product
+    name: ccip-product
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
@@ -21,13 +21,13 @@ eureka:
     service-url:
       defaultZone: http://admin:admin@eureka1:8761/eureka,http://admin:admin@eureka2:8762/eureka,http://admin:admin@eureka3:8763/eureka
   instance:
-    instance-id: microcloud-provider-product
+    instance-id: ccip-product
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒
 
 info:
-  app.name: microcloud-provider-product
+  app.name: ccip-product
   company.name: varian
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
