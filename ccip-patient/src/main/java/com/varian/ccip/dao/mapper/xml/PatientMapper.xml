@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.varian.ccip.dao.mapper.PatientMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.varian.ccip.dao.entity.Patient">
+        <id column="id" property="id" />
+        <result column="vip" property="vip" />
+        <result column="his_id" property="hisId" />
+        <result column="v_id" property="vId" />
+        <result column="pinyin" property="pinyin" />
+        <result column="address" property="address" />
+        <result column="contact_name" property="contactName" />
+        <result column="contact_address" property="contactAddress" />
+        <result column="contact_home_phone" property="contactHomePhone" />
+        <result column="contact_work_phone" property="contactWorkPhone" />
+        <result column="contact_mobile_phone" property="contactMobilePhone" />
+        <result column="contact_relationship" property="contactRelationship" />
+        <result column="home_phone" property="homePhone" />
+        <result column="work_phone" property="workPhone" />
+        <result column="mobile_phone" property="mobilePhone" />
+        <result column="national_id" property="nationalId" />
+        <result column="chinese_name" property="chineseName" />
+        <result column="citizenship" property="citizenship" />
+        <result column="english_name" property="englishName" />
+        <result column="ethnic_group" property="ethnicGroup" />
+        <result column="radiation_id" property="radiationId" />
+        <result column="marital_status" property="maritalStatus" />
+        <result column="patient_status" property="patientStatus" />
+        <result column="patient_history" property="patientHistory" />
+        <result column="created_user" property="createdUser" />
+        <result column="last_updated_user" property="lastUpdatedUser" />
+        <result column="patient_info" property="patientInfo" />
+        <result column="patient_ser" property="patientSer" />
+        <result column="gender" property="gender" />
+        <result column="id1" property="id1" />
+    </resultMap>
+</mapper>
