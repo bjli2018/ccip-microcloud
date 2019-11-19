@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microcloud-provider-product</artifactId>
+    <artifactId>ccip-product</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.varian.ccip</groupId>
