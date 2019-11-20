@@ -1,0 +1,17 @@
+server:
+  port: 8612
+eureka:
+  client: # 客户端进行Eureka注册的配置
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://admin:admin@eureka1:8761/eureka,http://admin:admin@eureka2:8762/eureka,http://admin:admin@eureka3:8763/eureka
+spring:
+  zipkin:
+    base-url: http://localhost:8601 #所有的数据提交到此服务之中
+    sender:
+      type: web       #提交的类型是web 服务
+  sleuth:
+    sampler:
+      probability: 1.0 # 定义抽样比率，默认为0.1
+  application:
+    name: ccip-consumer-sleuth

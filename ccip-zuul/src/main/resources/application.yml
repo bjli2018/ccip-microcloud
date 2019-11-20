@@ -1,0 +1,37 @@
+server:
+  port: 9501
+
+eureka:
+  client: # 客户端进行Eureka注册的配置
+    service-url:
+      defaultZone: http://admin:admin@eureka1:8761/eureka,http://admin:admin@eureka2:8762/eureka,http://admin:admin@eureka3:8763/eureka
+    register-with-eureka: false
+
+spring:
+  application:
+    name:  ccip-zuul
+  security:
+    user:
+      name: admin
+      password: admin
+
+zuul:
+  routes:
+    patients:
+      path:  /ccip-patient1/**
+      serviceId: ccip-patient
+    patients2:
+      path:  /ccip-patient2/**
+      url: http://localhost:9011/
+    product:
+      path: /ccip-product/**
+      serviceId: ccip-product
+  ignored-services:
+    "*"
+  prefix: /varian
+
+info:
+  app.name: ccip-zuul
+  company.name: varian
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$

@@ -17,6 +17,10 @@
         <module>ccip-patient</module>
         <module>ccip-service</module>
         <module>ccip-consumer-feign</module>
+        <module>ccip-consumer-sleuth</module>
+        <module>ccip-zuul</module>
+        <module>ccip-sleuth</module>
+        <module>ccip-product-sleuth</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
@@ -34,7 +38,7 @@
             <dependency> <!-- SpringCloud离不开SpringBoot，所以必须要配置此依赖包 -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.1.2.RELEASE</version>
+                <version>2.0.7.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

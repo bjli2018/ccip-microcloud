@@ -1,5 +1,10 @@
 server:
   port: 9004
+
+logging:
+  level:
+    com.varian.ccip.service: DEBUG
+
 eureka:
   client: # 客户端进行Eureka注册的配置
     register-with-eureka: false
