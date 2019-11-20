@@ -15,6 +15,8 @@
         <module>ccip-security</module>
         <module>ccip-eureka</module>
         <module>ccip-patient</module>
+        <module>ccip-service</module>
+        <module>ccip-consumer-feign</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
@@ -53,7 +55,12 @@
             </dependency>
             <dependency>
                 <groupId>enjoy</groupId>
-                <artifactId>microcloud-security</artifactId>
+                <artifactId>ccip-security</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>enjoy</groupId>
+                <artifactId>ccip-service</artifactId>
                 <version>1.0.0</version>
             </dependency>
         </dependencies>

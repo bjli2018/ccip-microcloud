@@ -87,7 +87,7 @@ public class DruidProperties {
     public ServletRegistrationBean<StatViewServlet> statViewServle(){
         ServletRegistrationBean<StatViewServlet> servletRegistrationBean=new ServletRegistrationBean<StatViewServlet>(new StatViewServlet(),"/druid/*");
         //IP白名单
-        servletRegistrationBean.addInitParameter("allow","127.0.0.1");
+        servletRegistrationBean.addInitParameter("allow","10.120.120.134,127.0.0.1");
         //IP黑名单
         //servletRegistrationBean.addInitParameter("deny","192.168.4.23");
         //控制台用户
