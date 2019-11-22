@@ -21,6 +21,7 @@
         <module>ccip-zuul</module>
         <module>ccip-sleuth</module>
         <module>ccip-product-sleuth</module>
+        <module>ccip-patient-sleuth</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>

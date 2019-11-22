@@ -10,3 +10,22 @@ management:
     web:
       server:
         auto-time-requests: false
+zipkin:
+  collector:
+    sample-rate: 1.0
+    http:
+      enabled: false
+    rabbitmq:
+      addresses: localhost:5672
+      password: 123456
+      queue: zipkin
+      username: enjoy
+      virtual-host: /
+  storage:
+    type: mysql
+    mysql:
+      host: localhost
+      port: 3306
+      username: root
+      password: admin
+      db: zipkin

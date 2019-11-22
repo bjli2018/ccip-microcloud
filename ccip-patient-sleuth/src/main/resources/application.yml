@@ -1,0 +1,34 @@
+server:
+  port: 8613
+spring:
+  application:
+    name: ccip-patient-sleuth
+  zipkin:
+    base-url: http://localhost:8601 #所有的数据提交到此服务之中
+    sender:
+      type: rabbit       #提交的类型是web 服务
+  sleuth:
+    sampler:
+      probability: 1.0 # 定义抽样比率，默认为0.1
+
+logging:
+  level:
+    com.varian.mapper: debug
+
+eureka:
+  client: # 客户端进行Eureka注册的配置
+    service-url:
+      defaultZone: http://admin:admin@eureka1:8761/eureka,http://admin:admin@eureka2:8762/eureka,http://admin:admin@eureka3:8763/eureka
+  instance:
+    instance-id: ccip-patient-sleuth
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
+    lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒
+
+info:
+  app.name: ccip-patient-sleuth
+  company.name: varian
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$
+
+

@@ -1,0 +1,5 @@
+com\varian\ccip\service\IProductService.class
+com\varian\ccip\ProductApp.class
+com\varian\ccip\service\impl\ProductServiceImpl.class
+com\varian\ccip\controller\ProductController.class
+com\varian\ccip\mapper\ProductMapper.class

@@ -4,6 +4,7 @@ import com.varian.ccip.vo.Product;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -23,8 +24,8 @@ public class ConsumerProductController {
     @Resource
     private HttpHeaders httpHeaders;
 
-    @RequestMapping("/product/get")
-    public Object getProduct(long id) {
+    @RequestMapping("/product/get/{id}")
+    public Object getProduct(@PathVariable String id) {
         Product product = restTemplate.exchange(PRODUCT_GET_URL + id,HttpMethod.GET,new HttpEntity<Object>(httpHeaders), Product.class).getBody();
         return  product;
     }
