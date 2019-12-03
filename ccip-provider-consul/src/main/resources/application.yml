@@ -1,0 +1,9 @@
+server:
+  port: 8501
+spring:
+  application:
+    name: ccip-provider-consul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
