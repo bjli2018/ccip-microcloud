@@ -1,0 +1,21 @@
+info:
+  app.name: ccip-gateway
+  company.name: varian
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$
+
+server:
+  port: 8040
+
+spring:
+  application:
+    name: ccip-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
