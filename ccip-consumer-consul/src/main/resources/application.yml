@@ -1,12 +1,10 @@
 server:
-  port: 8501
+  port: 8601
 spring:
   application:
-    name: ccip-provider-consul
+    name: ccip-consumer-consul
   cloud:
     consul:
-      discovery:
-        health-check-path: /actuator/health
       host: localhost
       port: 8500
 management:
