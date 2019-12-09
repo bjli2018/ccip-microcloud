@@ -24,8 +24,6 @@
         <module>ccip-patient-sleuth</module>
         <module>ccip-stream-provider</module>
         <module>ccip-stream-consumer</module>
-        <module>ccip-provider-consul</module>
-        <module>ccip-consumer-consul</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
